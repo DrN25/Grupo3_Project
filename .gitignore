@@ -1,0 +1,7 @@
+my_env/bin/*
+my_env/lib/*
+my_env/src/__pycache__/*
+*.pyc
+__pycache__
+*.sqlite3
+requirement.txt
