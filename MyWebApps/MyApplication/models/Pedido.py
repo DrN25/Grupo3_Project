@@ -25,7 +25,7 @@ class Pedido(models.Model):
         ordering = ['idUsuario', 'idVendedor', 'idProductoPedido', 'total', 'date']
 
     def save(self, *args, **kwargs):
-        self.status = self.status.upper()
+        self.payMethod = self.payMethod.upper()
         return super(Pedido, self).save(*args, **kwargs)
 
     def __str__(self):
