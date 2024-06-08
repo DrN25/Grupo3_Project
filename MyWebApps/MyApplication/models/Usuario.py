@@ -18,4 +18,4 @@ class Usuario(models.Model):
         return super(Usuario, self).save(*args, **kwargs)
 
     def __str__(self):
-        return "%s %s" % (self.name)
+        return "%s" % (self.name)
