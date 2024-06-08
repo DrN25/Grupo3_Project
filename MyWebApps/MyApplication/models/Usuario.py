@@ -11,11 +11,11 @@ class Usuario(models.Model):
     address = models.CharField(null=False, blank=False, max_length=255)
 
     class Meta:
-        ordering = ['name', 'address']
+        ordering = ['name']
 
     def save(self, *args, **kwargs):
         self.name = self.name.upper()
         return super(Usuario, self).save(*args, **kwargs)
 
     def __str__(self):
-        return "%s %s" % (self.name, self.address)
+        return "%s %s" % (self.name)
